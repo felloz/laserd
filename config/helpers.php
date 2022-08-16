@@ -14,3 +14,8 @@ function view($a, array $c = null)
 
     require_once APP_ROOT . "/resources/views/$a.php";
 }
+
+function json(object $data)
+{
+    echo json_encode($data);
+}

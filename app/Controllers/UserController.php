@@ -5,15 +5,17 @@ namespace App\Controllers;
 
 use App\Models\User;
 use Carbon\Carbon;
+use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Facades\DB;
 
 class UserController
 {
 
     public function show()
     {
-        $users = User::all();
+        $users = User::paginate(15);
 
-        return view('users', compact('users'));
+        return json($users);
     }
 
     public function create()

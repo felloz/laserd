@@ -44,6 +44,7 @@ class Router
              *  call_user_func_array is changed for call_user_func
              * to make it work with php8
              */
+            //dd($params);
             call_user_func(array($classInstance, $method), $params);
         } catch (MethodNotAllowedException $e) {
             echo 'Route method is not allowed.';

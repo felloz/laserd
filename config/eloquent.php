@@ -1,10 +1,12 @@
 <?php
 
-use Illuminate\Database\Capsule\Manager as DB;
+use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
 
-$db = new DB;
+
+
+$db = new Capsule;
 
 $db->addConnection([
     'driver' => 'pgsql',
