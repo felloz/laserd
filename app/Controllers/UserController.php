@@ -11,10 +11,9 @@ class UserController
 
     public function show()
     {
-        $patos = User::all();
-        $perro = "Dog";
-        dd($patos);
-        return view('users', compact('patos', 'perro'));
+        $users = User::all();
+
+        return view('users', compact('users'));
     }
 
     public function create()

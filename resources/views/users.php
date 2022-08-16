@@ -1,7 +1,8 @@
 <?php require_once __DIR__ . "/public/header.php"; ?>
-<h1><?= $perro ?></h1>
+<h1>Users
+</h1>
 <ul>
-    <?php foreach ($patos as $user) : ?>
+    <?php foreach ($users as $user) : ?>
         <li><?= $user->email ?></li>
     <?php endforeach; ?>
 </ul>
