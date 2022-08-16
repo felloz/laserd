@@ -12,5 +12,5 @@ function view($a, array $c = null)
         }
     }
 
-    require_once APP_ROOT . "/views/$a.php";
+    require_once APP_ROOT . "/resources/views/$a.php";
 }
