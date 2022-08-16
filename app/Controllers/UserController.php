@@ -13,7 +13,7 @@ class UserController
     {
         $patos = User::all();
         $perro = "Dog";
-
+        dd($patos);
         return view('users', compact('patos', 'perro'));
     }
 

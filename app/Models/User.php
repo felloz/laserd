@@ -2,8 +2,17 @@
 
 namespace App\Models;
 
-use Laserd\Database\Model;
 
+
+use Laserd\Database\Model as LaserdModel;
+
+//probando eloquent
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * En caso de que deseemos probar el Model que estamos desearrollando es solo cambiar
+ * el de eloquent por LaserdModel
+ */
 class User extends Model
 {
     protected $id;

@@ -6,7 +6,11 @@
             "App\\": "app/",
             "Laserd\\": "laserd/"
         },
-        "files": ["config/config.php", "config/helpers.php"]
+        "files": [
+            "config/config.php",
+            "config/helpers.php",
+            "config/eloquent.php"
+        ]
     },
     "license": "MIT",
     "authors": [
@@ -19,6 +23,8 @@
         "symfony/routing": "^5.4",
         "symfony/http-foundation": "^5.4",
         "larapack/dd": "^1.1",
-        "nesbot/carbon": "^2.61"
+        "nesbot/carbon": "^2.61",
+        "illuminate/database": "^8.83",
+        "illuminate/events": "^8.83"
     }
 }

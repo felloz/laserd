@@ -60,8 +60,8 @@ abstract class Model implements QueriesInterface
             $conn = Database::makeConnection();
             $query = "SELECT * FROM $model->table";
             $stmt = $conn->query($query);
-
-            return $stmt->fetchAll(\PDO::FETCH_OBJ);
+            return array();
+            //return $stmt->fetchAll(\PDO::FETCH_OBJ);
         } catch (\Throwable $th) {
             throw $th->getMessage();
         }
